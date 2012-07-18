@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+
+var path = require('path'),
+lib = path.normalize(path.resolve(__dirname+"/../src")),
+ecmr  = require(lib+"/ecmr.js").Ecmr;
+
+ecmr.exec();

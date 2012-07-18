@@ -1,0 +1,31 @@
+info it worked if it ends with ok
+verbose cli [ 'node',
+verbose cli   '/Users/PunchBox/local/bin/node/bin/npm',
+verbose cli   'install',
+verbose cli   './ecmr',
+verbose cli   '-g' ]
+info using npm@1.1.16
+info using node@v0.6.15
+verbose config file /Users/PunchBox/.npmrc
+verbose config file /Users/PunchBox/local/bin/node/etc/npmrc
+verbose config file /Users/PunchBox/local/bin/node/lib/node_modules/npm/npmrc
+verbose cache add [ './ecmr', null ]
+silly cache add: name, spec, args [ undefined, './ecmr', [ './ecmr', null ] ]
+verbose parsed url { pathname: './ecmr', path: './ecmr', href: './ecmr' }
+ERR! Could not install: ./ecmr
+ERR! Error: ENOENT, stat './ecmr'
+ERR! You may report this log at:
+ERR!     <http://github.com/isaacs/npm/issues>
+ERR! or email it to:
+ERR!     <npm-@googlegroups.com>
+ERR! 
+ERR! System Darwin 11.4.0
+ERR! command "node" "/Users/PunchBox/local/bin/node/bin/npm" "install" "./ecmr" "-g"
+ERR! cwd /Users/PunchBox/Projects/petprojects/ecmr
+ERR! node -v v0.6.15
+ERR! npm -v 1.1.16
+ERR! path ./ecmr
+ERR! code ENOENT
+ERR! message ENOENT, stat './ecmr'
+ERR! errno {}
+verbose exit [ 1, true ]

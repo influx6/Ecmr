@@ -1,0 +1,34 @@
+{
+	"name":"ecmr",
+	
+	"version":"0.0.1",
+	
+	"description": "a simple script to run a command continouse over an interval",
+	
+	"main":"./src/ecmr",
+	
+	"bin":{
+		"ecmr" : "./bin/ecmr"
+	},
+	
+	"engines":{
+		"node" : ">= 0.4.0"
+	},
+	
+	
+	"owners":{
+		"name":"Alex Ewetumo",
+		"email":"trinoxf@gmail.com"
+	},
+		
+	"licenses":{
+		"type":"MIT",
+      	"url": "http://mths.be/mit"
+	},
+	
+	"directories":{
+		"lib":"./lib",
+		"src":"./src"
+	}
+
+}
