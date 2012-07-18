@@ -16,10 +16,10 @@ var Ecmr = (function(){
 
       var op = arguments[0];
       for(var i=0; i < op.length;i++){
-         if(op[i] == "-c"){
+         if(op[i] == "-c" || op[i] == "-command"){
             normalized.command = op[i+1].replace(/\s+/ig,' ');
-         }else if(op[i] == "-t"){
-            normalized.timeout =  op[i+1].replace(/\s+/ig,'');    
+         }else if(op[i] == "-t" || op[i] == "-timeout"){
+            normalized.timeout =  1000*parseInt(op[i+1].replace(/\s+/ig,''));   
          }
       }
       
