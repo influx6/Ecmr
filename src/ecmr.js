@@ -49,10 +49,13 @@ var Ecmr = (function(){
    function run_command(dir,cmd){
       child.exec(cmd,{cwd:dir},function(e,out,err){
          if(e){
-            console.log('\033[31m');
+            process.stdout.write('\033[31m');
             process.stdout.write(" - ");
+            process.stdout.write(e.message);
          }
+            process.stdout.write('\033[34m');
             process.stdout.write(" + ");
+            process.stdout.write('\033[0m');
       });
    }
 
